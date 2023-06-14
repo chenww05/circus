@@ -1,21 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import { Button } from '@material-ui/core';
 import SignIn from './components/SignIn';
+import Dashboard from './components/dashboard/Dashboard';
 
 function App() {
   return (
     <div className="App">
+      <Dashboard />
       <Button variant="contained" color="primary" size="large">
         Submit
       </Button>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        
-      </header>
+      
       <SignIn ></SignIn>
     </div>
   );
